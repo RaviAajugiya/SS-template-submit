@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #0f561a;
+    --second-color: #8fd299;
+    --white: #ffffff;
+    --dark: #506172;
+    --bgcolor: #e0ebf1;
+    --primary-font: "Poppins", sans-serif;
+    --second-font: "Signika", sans-serif;
+}
+
+
+body {
+    font-family: var(--primary-font);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-us-inside {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-items:first-child {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-ditails {
+    margin: 0 0px;
+    padding: 10px;
+    min-width: 200px;
+    flex: 25%;
+    text-align: center;
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    transition: box-shadow .5s ease-out;
+
+
+    &:hover {
+        box-shadow:0 0 50px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.contact-ditails-icon {
+    width: 35px;
+    fill: var(--second-color);
+    background-color: var(--white);
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-text {
+    .contact-title {
+        font-size: 25px;
+    }
+}
+
+.contact-information {
+    display: inline-block;
+    margin: 20px 0;
+}
+
+
+
+.contact-form input[type=text],
+.contact-form textarea[type=text] {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    // width: 100%;
+    width: calc(100% - 20px);
+    border-radius: .25rem;
+    font-size: 18px;
+    font-weight: 500;
+    height: auto;
+    margin: 10px;
+    padding: 15px 10px;
+    outline: 0;
+    color: var(--dark);
+    border: 1px var(--primary-color) solid
+}
+
+.contact-form input[type=text]::placeholder,
+.contact-form textarea[type=text]::placeholder {
+    font-size: 16px;
+    font-weight: 400
+}
+
+.contact-form {
+    margin-top: 50px;
+    font-size: 20px;
+
+    .title {
+        text-align: center;
+    }
+}
+
+.form-items {
+    text-align: center;
+
+    button {
+        margin: 25px;
+        width: 150px;
+        height: 40px;
+        border: 1px solid black;
+        font-size: 18px;
+        transition: all 1s ease-out;
+        background-color: var(--white);
+
+        &:hover {
+            background-color: var(--second-color);
+        }
+    }
+}

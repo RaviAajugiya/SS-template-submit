@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #0f561a;
+  --second-color: #8fd299;
+  --white: #ffffff;
+  --dark: #506172;
+  --bgcolor: #e0ebf1;
+  --primary-font: "Poppins", sans-serif;
+  --second-font: "Signika", sans-serif;
+}
+
+.vision-mission-items div {
+  flex: 1 1;
+}
+
+.vision-mission {
+  background-color: var(--bgcolor);
+  padding: 40px;
+}
+
+.vision-mission-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 40px 0px;
+}
+.vision-mission-items img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 768px) {
+  .vision-mission-items div {
+    flex: auto;
+  }
+}
+.team-member-image img {
+  width: 250px;
+  height: auto;
+}
+
+.team_inner {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member-desc .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=about.css.map */
