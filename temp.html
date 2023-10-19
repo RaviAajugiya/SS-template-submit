@@ -1,177 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
-    <title>Testimonial Slider</title>
+    <title>Document</title>
+
     <style>
-        /* Customize your slider's styles here */
-        .glider {
-            width: 80%;
-            margin: 0 auto;
+        /* Style for the dropdown menu */
+        .dropdown-menu {
+            display: none; /* Hide the dropdown menu by default */
+            position: absolute;
+            background-color: #fff; /* Background color */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow */
+            border: 1px solid #ccc; /* Border */
+            padding: 10px; /* Padding */
+            z-index: 1; /* Ensure it appears above other content */
         }
 
-        .glider-track {
-            display: flex;
+        /* Style for the dropdown items */
+        .dropdown-item {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333; /* Text color */
         }
 
-        .glider-slide {
-            flex: 0 0 300px;
-            margin-right: 20px;
-            background-color: #f0f0f0;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        /* Hover effect for dropdown items */
+        .dropdown-item:hover {
+            background-color: #f2f2f2; /* Background color on hover */
         }
 
-        /* Button styles */
-        .slider-buttons {
-            text-align: center;
-            margin-top: 20px;
+        /* Show the dropdown menu with animation when the link is hovered */
+        .nav-link:hover + .dropdown-menu {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out; /* Apply fadeIn animation */
         }
 
-        .slider-button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin: 0 5px;
-            border-radius: 5px;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px); /* Start slightly above the original position */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* Move to the original position */
+            }
         }
     </style>
 </head>
+
 <body>
-    <div class="glider">
-        <div class="glider-track">
-            <div class="glider-slide">
-                <h2>Testimonial 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>- John Doe</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 2</h2>
-                <p>Integer eget odio eget justo facilisis accumsan.</p>
-                <p>- Jane Smith</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-            <div class="glider-slide">
-                <h2>Testimonial 3</h2>
-                <p>Aliquam erat volutpat. Sed in semper odio.</p>
-                <p>- David Johnson</p>
-            </div>
-              
-            <!-- Add more testimonial slides as needed -->
-        </div>
+    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" itemscope=""
+        itemtype="https://www.schema.org/SiteNavigationElement">{{BusinessTypes}}</a>
+    <div class="dropdown-menu" id="UBCLDropDown">
+        <a class="dropdown-item" href="{{Category}}.html">{{CategoryName}}</a>
+        <a class="dropdown-item" href="{{Category}}.html">{{CategoryName}}</a>
+        <a class="dropdown-item" href="{{Category}}.html">{{CategoryName}}</a>
     </div>
-
-    <!-- Navigation buttons -->
-    <div class="slider-buttons">
-        <button class="slider-button glider-prev">Previous</button>
-        <button class="slider-button glider-next">Next</button>
-    </div>
-
-    <script>
-        new Glider(document.querySelector('.glider'), {
-            slidesToShow: 1,
-            dots: '.dots',
-            draggable: true,
-            arrows: {
-                prev: '.glider-prev',
-                next: '.glider-next'
-            }
-        });
-    </script>
 </body>
+
 </html>
